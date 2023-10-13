@@ -1,0 +1,179 @@
+.up-button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1%;
+    z-index: 99;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/banner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navbar{
+    padding:2%;
+    text-transform: uppercase;
+}
+
+.navbar img{
+    height: 5vh;
+    width: 8vw;
+    object-fit: contain;
+}
+
+.banner-content{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.block{
+    padding-top:3%;
+}
+
+.block h1{
+    margin:2% 4%;
+}
+
+.blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;    
+    border: none !important;
+}
+
+.card img{
+    height: 25vh;
+    object-fit: cover;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.bi{
+    font-size: 22px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 90vh;
+    padding: 5%;
+}
+
+.contact{
+    height: 40vh;
+}
+
+#about{
+    margin-top: 5%;
+    height: 70vh;
+}
+
+#about img{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.footer{
+    height: 40vh;
+    padding-top: 3%;
+}
+
+#login-left{
+    float: left;
+    width: 35%;
+    background:url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#login-right{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-right form{
+    width: 70%;
+}
+
+#login-right .btn{
+    margin-top: 2%;
+    width: 100%;
+}
+
+#login-right p{
+    margin-top: 2%;
+}
+
+#login-right p a{
+    color: black;
+}
+
+#packages{
+    height: 100vh;
+}
+
+#packages .card-title{
+    width: 100%;
+    padding: 4%;
+    text-align: center;
+}
+
+.full-page{
+    height: 40vh;
+    padding-top: 2%;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+.full-blocks{
+    margin-bottom: 5%;
+}
+
+.card-body h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: raleway;
+}

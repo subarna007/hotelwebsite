@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Foods</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo.png" alt="" width="30" height="24">
+              </a>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="rooms.html">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Foods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="adventures.html">Adventures</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Packages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../packages.html">Platinum</a></li>
+                  <li><a class="dropdown-item" href="../packages.html">Silver</a></li>
+                  <li><a class="dropdown-item" href="../packages.html">Gold</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="../signup.html">Sign Up</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html" >Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="banner full-page">   
+      <div class="banner-content">
+          <h1 class="display-5 text-justify text-white mb-4 text-uppercase">
+              Search for Delicious Foods.
+          </h1>
+            <form class="form-inline my-2 my-lg-0 search">
+              <input class="form-control mr-sm-2 me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+      </div>
+  </div>
+  <!-- Nav tabs -->
+<ul class="nav nav-tabs container mt-2"  id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All Categories</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="false">Drinks</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast" type="button" role="tab" aria-controls="breakfast" aria-selected="false">Breakfast</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch" type="button" role="tab" aria-controls="lunch" aria-selected="false">Lunch</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="dinner-tab" data-bs-toggle="tab" data-bs-target="#dinner" type="button" role="tab" aria-controls="dinner" aria-selected="false">Dinner</button>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all-tab">
+    <div class="block">
+    <div class="blocks full-blocks">
+      <div class="card" style="width: 18rem;">
+        <img src="../img/foods/coke.jpg" class="card-img-top" alt="coke">
+        <div class="card-body">
+          <h5 class="card-title">Coco Cola </h5>
+          <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-80</span>
+          <a href="#" class="btn btn-outline-success">Order Now</a>
+        </div>
+      </div>   
+      <div class="card" style="width: 18rem;">
+        <img src="../img/foods/breadwithomlete.webp" class="card-img-top" alt="breadandomlette">
+        <div class="card-body">
+          <h5 class="card-title">bread with omlet </h5>
+          <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-150/plate</span>
+          <a href="#" class="btn btn-outline-success">Order Now</a>
+        </div>
+      </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/pizza.jpg" class="card-img-top" alt="pizza">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-450/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/thakali.jpg" class="card-img-top" alt="thakali">
+          <div class="card-body">
+            <h5 class="card-title">Nepali khana set </h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-350/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="tab-pane" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+    <div class="block">
+      <div class="blocks full-blocks">
+              <div class="card" style="width: 18rem;">
+                <img src="../img/foods/icelatte.jpg" class="card-img-top" alt="icelatte">
+                <div class="card-body">
+                  <h5 class="card-title">ice latte</h5>
+                  <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-200</span>
+                  <a href="#" class="btn btn-outline-success">Order Now</a>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;">
+              <img src="../img/foods/icemocha.jpg" class="card-img-top" alt="icemocha">
+              <div class="card-body">
+                <h5 class="card-title">ice mocha </h5>
+                <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-290</span>
+                <a href="#" class="btn btn-outline-success">Order Now</a>
+              </div>
+            </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/americano.jpg" class="card-img-top" alt="americano">
+            <div class="card-body">
+              <h5 class="card-title">americano </h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-200</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+          <img src="../img/foods/coffeelatte.jpg" class="card-img-top" alt="coffeelatte">
+          <div class="card-body">
+            <h5 class="card-title">coffee latte </h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-220</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+          </div>
+          </div>
+          <div class="blocks full-blocks">
+          <div class="card" style="width: 18rem;">
+          <img src="../img/foods/greentea.jpg" class="card-img-top" alt="greentea">
+          <div class="card-body">
+          <h5 class="card-title">Green tea </h5>
+          <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-70</span>
+          <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+          <img src="../img/foods/milktea.jpg" class="card-img-top" alt="milktea">
+          <div class="card-body">
+          <h5 class="card-title">milk tea </h5>
+          <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-80</span>
+          <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/coke.jpg" class="card-img-top" alt="coke">
+            <div class="card-body">
+              <h5 class="card-title">Coco Cola </h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-80</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>          
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/fanta.jpg" class="card-img-top" alt="fanta">
+            <div class="card-body">
+              <h5 class="card-title">fanta</h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-80</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          </div>
+          <div class="blocks full-blocks">
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/tuborg.jpg" class="card-img-top" alt="tuborg">
+            <div class="card-body">
+              <h5 class="card-title">tuborg </h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-220</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/nepalice.jpg" class="card-img-top" alt="nepalice">
+            <div class="card-body">
+              <h5 class="card-title">nepal ice</h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-180</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/milkshake.jpg" class="card-img-top" alt="milkshake">
+            <div class="card-body">
+              <h5 class="card-title">milk shake </h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-180</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/vanillashake.jpg" class="card-img-top" alt="vanillashake">
+            <div class="card-body">
+              <h5 class="card-title">vanila shake </h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-200</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          </div>
+        </div>
+  </div>
+  <div class="tab-pane" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+    <div class="block">
+      <div class="blocks full-blocks">
+      <div class="card" style="width: 18rem;">
+  <img src="../img/foods/omlette.jpg" class="card-img-top" alt="omlette">
+  <div class="card-body">
+    <h5 class="card-title">omlette </h5>
+    <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-50/plate</span>
+    <a href="#" class="btn btn-outline-success">Order Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="../img/foods/breadwithomlete.webp" class="card-img-top" alt="breadandomlette">
+  <div class="card-body">
+    <h5 class="card-title">bread with omlette </h5>
+    <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-150/plate</span>
+    <a href="#" class="btn btn-outline-success">Order Now</a>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+  <div class="tab-pane" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+    <div class="block">
+    <div class="blocks full-blocks">
+      <div class="card" style="width: 18rem;">
+          <img src="../img/foods/chimomo.jpg" class="card-img-top" alt="momo">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Momo</h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-200/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/chowmein.jpg" class="card-img-top" alt="chowmein">
+          <div class="card-body">
+            <h5 class="card-title">Chowmein</h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-150/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/pizza.jpg" class="card-img-top" alt="pizza">
+          <div class="card-body">
+            <h5 class="card-title">Pizza</h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-450/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/chicken.jpg" class="card-img-top" alt="friedchicken">
+          <div class="card-body">
+            <h5 class="card-title">fried chicken </h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-250/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+       
+      </div>
+      <div class="blocks full-blocks">
+        <div class="card" style="width: 18rem;">
+            <img src="../img/foods/chiburger.jpg" class="card-img-top" alt="chiburger">
+            <div class="card-body">
+              <h5 class="card-title">Chicken burger</h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-220/piece</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/vegburger.jpg" class="card-img-top" alt="vegburger">
+            <div class="card-body">
+              <h5 class="card-title">veg burger</h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-135/piece</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/vegmomo.jpg" class="card-img-top" alt="vegmomo">
+            <div class="card-body">
+              <h5 class="card-title">Veg momo</h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-120/plate</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../img/foods/cheesepizza.jpg" class="card-img-top" alt="cheesepizza">
+            <div class="card-body">
+              <h5 class="card-title">Cheese pizza </h5>
+              <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-350/plate</span>
+              <a href="#" class="btn btn-outline-success">Order Now</a>
+            </div>
+          </div>
+        </div>
+      <div class="blocks full-blocks">
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/cheesemomo.jpg" class="card-img-top" alt="cheesemomo">
+          <div class="card-body">
+            <h5 class="card-title">Cheese momo</h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-220/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/jholmomo.jpg" class="card-img-top" alt="jholmomo">
+          <div class="card-body">
+            <h5 class="card-title">jhol momo</h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-250/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/buffmomo.jpg" class="card-img-top" alt="buffmomo">
+          <div class="card-body">
+            <h5 class="card-title">buff momo</h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-180/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+          <img src="../img/foods/friedrice.jpg" class="card-img-top" alt="friedrice">
+          <div class="card-body">
+            <h5 class="card-title">freid rice </h5>
+            <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-130/plate</span>
+            <a href="#" class="btn btn-outline-success">Order Now</a>
+          </div>
+        </div>
+        </div>
+        
+  </div>
+  </div>
+  <div class="tab-pane" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+    <div class="block">
+    <div class="blocks full-blocks">
+    <div class="card" style="width: 18rem;">
+      <img src="../img/foods/thakali.jpg" class="card-img-top" alt="thakali">
+      <div class="card-body">
+        <h5 class="card-title">Nepali khana set </h5>
+        <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-350/plate</span>
+        <a href="#" class="btn btn-outline-success">Order Now</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+      <img src="../img/foods/vegthakali.jpg" class="card-img-top" alt="vegthakali">
+      <div class="card-body">
+        <h5 class="card-title">veg khana set</h5>
+        <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-220/plate</span>
+        <a href="#" class="btn btn-outline-success">Order Now</a>
+      </div>
+    </div>
+    
+    <div class="card" style="width: 18rem;">
+      <img src="../img/foods/rotikhana.webp" class="card-img-top" alt="rotikhana">
+      <div class="card-body">
+        <h5 class="card-title">roti khana set </h5>
+        <span class="badge bg-success rounded-pill text-light p-2 mb-2 w-50">NRs-180/plate</span>
+        <a href="#" class="btn btn-outline-success">Order Now</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
+</div>
+  </div>
+    <div class="footer bg-light">
+      <div class="container">
+          <div class="row">
+            <div class="col">
+              <h5>ABOUT OUR HOTEL</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident id, quas, itaque, unde et praesentium deserunt iste inventore adipisci molestiae consequuntur accusamus nobis ipsum tenetur tempore ullam sint beatae mollitia?</p>
+            </div>
+            <div class="col navbar-light">
+              <h5>LINKS</h5>
+              <ul class="navbar-nav">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5>SEND US YOUR QUESTIONS</h5>
+              <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
+                </div>
+            </div>
+          </div>
+        </div>
+  </div>
+ </body>
+
+</html>
